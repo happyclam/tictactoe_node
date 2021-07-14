@@ -1,0 +1,47 @@
+<div itemscope itemtype="http://schema.org/MobileApplication">
+  <span itemprop="name">Angry Birds</span> -
+
+  REQUIRES <span itemprop="operatingSystem">ANDROID</span>
+  <link itemprop="applicationCategory" href="http://schema.org/GameApplication"/>
+
+  RATING:
+  <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+    <span itemprop="ratingValue">4.6</span> (
+    <span itemprop="ratingCount">8864</span> ratings )
+  </div>
+
+  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    Price: $<span itemprop="price">1.00</span>
+    <meta itemprop="priceCurrency" content="USD" />
+  </div>
+</div>
+
+<div itemscope itemtype="http://schema.org/AggregateRating"> 
+	<span itemprop="about" itemscope itemtype="http://schema.org/CreativeWork">
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		<span itemprop="name">あらゆ</span>
+	</span>は
+	<span itemprop="carrierRequirements">
+		<span itemprop="name">スマホ用</span>
+    </span>
+	<span itemprop="applicationSubCategory">テーブルゲーム</span>アプリ、
+  	    <span itemprop="applicationSuite">三目並べ「無敗」</span>の連続無敗記録ランキングです。
+
+
+<div itemscope itemtype="http://schema.org/Review"> 
+	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		<span itemprop="name">あらゆ</span>
+	</span>は
+	<span itemprop="itemreviewed" itemscope itemtype="http://schema.org/Book">
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<span itemprop="name">鳥山明</span>
+		</span>の
+		<span itemprop="name">ドラゴンボール</span>を、
+	</span>
+	<span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating"> 
+		<meta itemprop="worstRating" content = "0"> 
+		<span itemprop="bestRating">100</span>点満点中
+		<span itemprop="ratingValue">100</span>点と評価した
+	</span>
+</div>
+</div>

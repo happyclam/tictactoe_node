@@ -1,0 +1,22 @@
+{
+  "name": "mongo-practice",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.12.1",
+    "jade": ">= 0.0.1",
+    "less-middleware": "*",
+    "mongodb": "2.0.27",
+    "errorhandler": ">=1.4.3",
+    "simple-jekyll-search": "~1.1.1"
+  },
+  "engines": {
+    "node": "4.8.4",
+    "npm": "2.8.3"
+  },
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "happyclam.u@gmail.com"
+}

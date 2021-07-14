@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  h1= title
+  script(async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+  <!-- bigbanner -->
+  ins(
+    class="adsbygoogle",
+    style="display:inline-block;width:728px;height:90px",
+    data-ad-client="ca-pub-9018029357773039",
+    data-ad-slot="8654099707")
+  script.
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  p 連続無敗記録ランキング　トップ１００
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://tictactoe-cf.herokuapp.com" data-via="SappierBoy">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <a href="https://play.google.com/store/apps/details?id=com.herokuapp.tictactoe_cf" target="_blank"><img src="./images/icon.png" alt="ios/androidアプリのアイコン" title="androidアプリ"></a>
+  - var headers = ['Name', 'Score', 'Date'];
+  table#users
+    tr
+      th #
+      th Name
+      th Score
+      th Date
+      each user, i in users
+        tr(id=id)
+          - s = (i+1).toString()
+          td #{s}
+          td #{user.name}
+          td #{user.score}
+          - yyyy = user.date.getFullYear().toString()
+          - mm = (user.date.getMonth()+1).toString()
+          - dd = user.date.getDate().toString()
+          - s = yyyy + "/" + (mm[1] ? mm : "0"+mm[0]) + "/" + (dd[1] ? dd : "0"+dd[0])
+          td #{s}
+  <hr>          
+  div(itemscope itemtype="http://schema.org/MobileApplication")
+    span(itemprop="name") 三目並べ「無敗」
+    span の連続無敗記録ランキングサイトです。REQUIRES&nbsp;
+    span(itemprop="operatingSystem") ANDROID
+    link(itemprop="applicationCategory" href="http://schema.org/GameApplication")
+    div(itemprop="aggregateRating",itemscope itemtype="http://schema.org/AggregateRating")
+      |RATING:
+      span(itemprop="ratingValue") 0 (
+      span(itemprop="ratingCount") 0 ratings )
+    //
+      div(itemprop="offers", itemscope itemtype="http://schema.org/Offer").
+        Price: ¥0
+      span(itemprop="price") 0
+        meta(itemprop="priceCurrency", content="JPY")
+  h3(align="center") Tic-Tac-Toe Unbeaten

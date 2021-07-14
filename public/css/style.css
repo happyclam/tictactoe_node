@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+#users {
+  border: 2px solid #000000;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+#users th {
+  padding: 0.5em;
+}
+#users td {
+  padding: 0.5em;
+  border: 1px solid #cccccc;
+}
